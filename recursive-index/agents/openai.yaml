@@ -1,0 +1,6 @@
+interface:
+  display_name: "Recursive Index"
+  short_description: "Maintain direct folder indexes"
+  default_prompt: "Use $recursive-index to establish or maintain direct index.md navigation in this project."
+  icon_small: "./assets/recursive-index.png"
+  icon_large: "./assets/recursive-index.png"
