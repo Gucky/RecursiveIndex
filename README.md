@@ -58,6 +58,7 @@ The skill helps agents to:
 
 - create or update lowercase `index.md` files in selected folder trees;
 - describe files and directories by purpose without producing recursive manifests;
+- keep entries predictable with directories first and files second, alphabetically within each group;
 - respect allowlist or denylist project scope; and
 - keep indexes accurate after structural changes.
 

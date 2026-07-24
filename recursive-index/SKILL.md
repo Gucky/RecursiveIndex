@@ -14,6 +14,7 @@ Use this skill to make a selected part of a project easy to navigate for people 
 - Do not describe `index.md` itself. It is the navigation document, not an indexed item.
 - Describe every other direct file and directory that is in scope, including hidden items, unless project rules expressly identify them as ignored or generated.
 - Describe a subdirectory as one item. Its own `index.md` describes its direct contents when that subdirectory participates in the system.
+- Order entries in two groups: list all direct subdirectories first, alphabetically by name, then list all direct files, alphabetically by name. Never use discovery, creation, or insertion order.
 - Give each entry a concise purpose-oriented description. State what an item is for, not just its file type.
 - Start with a short folder-level summary only when the direct contents have a coherent shared purpose. Omit it for genuinely mixed folders.
 - Link or refer to a child `index.md` only if that child is within the configured scope.
@@ -68,7 +69,7 @@ Where a project uses another configuration format, follow that format while pres
 
 1. Determine the active scope and inspect each participating folder directly. Do not assume a folder is in scope from its name.
 2. For a new system, create an `index.md` in every participating folder, including each selected root.
-3. For existing indexes, preserve useful wording and the project's documentation style. Update only entries affected by current direct contents or an explicitly requested rewrite.
+3. For existing indexes, preserve useful wording and the project's documentation style. Update only entries affected by current direct contents or an explicitly requested rewrite, but always normalize the complete entry order to directories first and files second, alphabetically within each group.
 4. Include every relevant direct file and directory once. Remove entries for items that no longer exist, unless the project deliberately retains a historical note.
 5. For a directory entry, state its role and, where useful, direct readers to `directory-name/index.md`. Never paste that child index's entries into the parent.
 6. Keep generated, temporary, ignored, external, and intentionally undocumented items out only when project rules say so. If their status is unclear, ask rather than silently hiding them.
@@ -117,6 +118,7 @@ Before finishing, verify that:
 - each index describes only its own direct contents;
 - `index.md` does not list itself;
 - every relevant direct item has a concise, accurate entry;
+- entries list all direct subdirectories first and all direct files second, alphabetically by name within each group;
 - each child directory is described only once in its parent, with detail left to the child index;
 - exclusions and out-of-scope paths received no new indexes; and
 - no source code, generated files, or unrelated project content changed.
